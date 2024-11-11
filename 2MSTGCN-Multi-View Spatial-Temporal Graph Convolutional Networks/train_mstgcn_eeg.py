@@ -96,8 +96,8 @@ def main(args):
     id_to_index = {id: idx for idx, id in enumerate(unique_train_patient_ids)}
 
     train_domin_indexed = np.array([id_to_index[id] for id in train_domin])
-    val_domin_indexed = np.array([id_to_index.get(id, -1) for id in val_domin])  # 如果ID不存在，则设为-1
-    test_domin_indexed = np.array([id_to_index.get(id, -1) for id in test_domin])  # 如果ID不存在，则设为-1
+    val_domin_indexed = np.array([id_to_index.get(id, -1) for id in val_domin])  
+    test_domin_indexed = np.array([id_to_index.get(id, -1) for id in test_domin]) 
 
 
 
