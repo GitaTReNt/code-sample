@@ -125,7 +125,7 @@ def main(args):
 
 
 
-#train和eval都在
+
 def train(model, dataloaders, args, device, save_dir, log, tbx):
     """
     Perform training and evaluate on val set
